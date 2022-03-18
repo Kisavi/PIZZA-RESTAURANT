@@ -1,0 +1,41 @@
+@media only screen and (max-width :1024px) {
+    html, body {
+        width: 100%;
+    }
+
+    /* Carousel section */
+    .carImg {
+        height: 60vh !important;
+    }
+
+    /* Menu section */
+    .card-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 0 !important;
+    }
+
+    .card {
+        margin-bottom: 1.7rem;
+    }
+
+    /* Order section */
+    .order-section {
+        margin-top: 4rem !important;
+    }
+
+    form {
+        margin: 0 !important;
+    }
+
+    /* Feedback section */
+    .feedback {
+        margin-top: 4rem !important;
+    }
+
+    .feedback-form {
+        padding: 1rem 2rem !important;
+        margin: 0 !important;
+     }
+}
