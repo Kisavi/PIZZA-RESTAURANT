@@ -1,3 +1,4 @@
+/* Navbar section */
 .navbar {
     background: #ffae7b;
 }
@@ -10,4 +11,24 @@
 .navbar-nav a:hover {
     color: #000000 !important;
 }
+
+/* Carousel section */
+.carImg {
+    height: 100vh;
+}
+
+/* Menu section */
+#menu {
+    margin-top: 5rem;
+}
+
+#menu h3 {
+    text-align: center;
+}
+
+.card-section {
+    display: flex;
+    justify-content: space-between;
+}
+
 
