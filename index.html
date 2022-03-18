@@ -14,6 +14,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
+    <!-- choosen js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.jquery.js"></script>
     <!-- my js -->
     <script src="./JS/script.js"></script>
     <!-- CSS FILES -->
@@ -22,9 +24,14 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- Boxicons CSS -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <!-- chosen css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.4.2/chosen.css">
     <!-- My css -->
     <link href="./CSS/small.css" rel="stylesheet">
     <link href="./CSS/style.css" rel="stylesheet">
+</head>
+
+<body>
     <!-- LANDING PAGE -->
     <div id="home">
         <!-- navbar -->
@@ -115,7 +122,7 @@
                 <img src="./IMAGES/tikachicken.png" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">Chicken Tikka</h5>
-                    <p class="card-text">Grilled Chicken, Tomatoes, Red Onions & MIxed Peppers</p>
+                    <p class="card-text">Grilled Chicken, Tomatoes, Red Onions & Mixed Peppers</p>
                     <a href="#" class="btn btn-primary">ORDER</a>
                 </div>
             </div>
@@ -183,13 +190,62 @@
     </div>
 
     <!-- ORDER SECTION -->
-   
+    <div class="container">
+        <form>
+            <legend>Order Your Pizza Here</legend>
+            <div class="mb-3">
+                <label class="form-label">Select your pizza flavor:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option>BBQ Steak</option>
+                    <option>Hawaiian</option>
+                    <option>Chicken Tikka</option>
+                    <option>Peri-Peri Chicken</option>
+                    <option>BBQ Chicken</option>
+                    <option>Margherita</option>
+                    <option>Veggie Deluxe</option>
+                    <option>Kachumbari</option>
+                    <option>Veggie Extravaganza</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Pick your preferred Size:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option>Regular @ Ksh 500</option>
+                    <option>Medium @ Ksh 850</option>
+                    <option>Large @ Ksh 1300</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Choose your favourite Crust:</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option>Thin Crust @ Ksh 100</option>
+                    <option>Flat Bread Crust @ Ksh 150</option>
+                    <option>Thick Crust @ Ksh 200</option>
+                    <option>Stuffed Crust @ Ksh 250</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Choose your favourite Toppings:</label>
+                <select class="chzn-select form-select" multiple="true" name="faculty" aria-label="Default select example">
+                    <option>Red Onions @ Ksh 80</option>
+                    <option>Sweet Corn @ Ksh 150</option>
+                    <option>Cheese @ Ksh 200</option>
+                    <option>Mushroom @ Ksh 250</option>
+                    <option>Green Pepper @ Ksh 50</option>
+                    <option>Pineapples @ Ksh 100</option>
+                    <option>Tomatoes @ Ksh 80</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Number of Pizza's:</label>
+                <input type="number" id="quantity" class="form-control" name="quantity" min="1"
+                    placeholder="Number of Pizza's">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
     <!-- FEEDBACK SECTION -->
     <!-- FOOTER SECTION -->
-</head>
-
-<body>
-
 </body>
 
 </html>
