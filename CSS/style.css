@@ -72,5 +72,17 @@ legend {
     text-align: center;
 }
 
+/* Footer section */
+.footer {
+    background: #fdcdaf;
+    padding: 0.4rem 0;
+    text-align: center;
+}
+
+.icons i {
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
 
 
