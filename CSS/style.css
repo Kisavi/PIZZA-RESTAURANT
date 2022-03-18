@@ -56,5 +56,21 @@ legend {
     display: none;
 }
 
+/* Feedback section */
+.feedback {
+    margin-top: 7rem;
+    margin-bottom: 3rem;
+}
+
+.feedback-form {
+   padding: 2rem 4rem;
+   border: 1px solid black;
+   margin: 0 13rem;
+}
+
+.feedbackForm h3, h6 {
+    text-align: center;
+}
+
 
 
