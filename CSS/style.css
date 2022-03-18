@@ -1,0 +1,13 @@
+.navbar {
+    background: #ffae7b;
+}
+
+.navbar-nav a {
+    color: rgb(126, 13, 13) !important;
+    font-size: large;
+}
+
+.navbar-nav a:hover {
+    color: #000000 !important;
+}
+
