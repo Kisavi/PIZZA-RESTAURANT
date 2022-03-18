@@ -192,7 +192,7 @@
     <!-- ORDER SECTION -->
     <div class="container">
         <form>
-            <legend>Order Your Pizza Here</legend>
+            <legend>Build Your Pizza Here</legend>
             <div class="mb-3">
                 <label class="form-label">Select your pizza flavor:</label>
                 <select class="form-select" aria-label="Default select example">
@@ -226,7 +226,8 @@
             </div>
             <div class="mb-3">
                 <label class="form-label">Choose your favourite Toppings:</label>
-                <select class="chzn-select form-select" multiple="true" name="faculty" aria-label="Default select example">
+                <select class="chzn-select form-select" multiple="true" name="faculty"
+                    aria-label="Default select example">
                     <option>Red Onions @ Ksh 80</option>
                     <option>Sweet Corn @ Ksh 150</option>
                     <option>Cheese @ Ksh 200</option>
@@ -241,11 +242,43 @@
                 <input type="number" id="quantity" class="form-control" name="quantity" min="1"
                     placeholder="Number of Pizza's">
             </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
+            <div class="mb-3">
+                <label for="exampleFormControlInput1" class="form-label">Delivery Address</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="@ Ksh 250. Only fill if you want us to do the delivery">
+              </div>
+            <button type="submit" class="btn btn-primary">Checkout</button>
         </form>
     </div>
+    <div class="order-summary">
+        <div class="container">
+            <h2>Your Order Summary</h2>
+            <p>Flavour choosen:</p>
+            <p>Pizza size:</p>
+            <p>Crust choosen:</p>
+            <p>Additional toppings:</p>
+            <p>Number of pizzas:</p>
+            <p>Total amount:</p>
+            <button type="submit" class="btn btn-primary">Place Order</button>
+        </div>
+    </div>
     <!-- FEEDBACK SECTION -->
+<div class="feedback">
+    <div class="container">
+        <h3>Get in Touch</h3>
+        <h6>We love and appreciate to hear from our clients. Share any messeage or feedback you have with us.</h6>
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" placeholder="Your message..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Send<i class='bx bx-right-arrow-alt'></i></button>
+    </div>
+</div>
     <!-- FOOTER SECTION -->
+    
 </body>
 
 </html>
