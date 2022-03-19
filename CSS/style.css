@@ -1,6 +1,12 @@
 hr {
     margin: 2rem 0;
 }
+
+.carousel-caption a {
+    background: #000000 !important;
+    border: transparent !important;
+}
+
 /* Navbar section */
 .navbar {
     background: #ffae7b;
@@ -29,6 +35,19 @@ hr {
     text-align: center;
 }
 
+.card {
+    border: transparent;
+    border-radius: 5px;
+    background: #fdfbfb;
+    box-shadow: 20px 20px 60px #d9d9d9,
+        -20px -20px 60px #ffffff;
+}
+
+.card-body a {
+    background: #000000 !important;
+    border: transparent !important;
+}
+
 .card-section {
     display: flex;
     justify-content: space-between;
@@ -44,10 +63,17 @@ form {
     padding: 4rem;
     background: #fdcdaf;
 }
+
 legend {
     text-align: center;
     text-decoration: underline;
     margin-bottom: 3rem;
+}
+
+ button {
+    background: #000000 !important;
+    color: #fff !important;
+    border: none !important;
 }
 
 .order-summary {
@@ -63,12 +89,13 @@ legend {
 }
 
 .feedback-form {
-   padding: 2rem 4rem;
-   border: 1px solid black;
-   margin: 0 13rem;
+    padding: 2rem 4rem;
+    border: 1px solid black;
+    margin: 0 13rem;
 }
 
-.feedbackForm h3, h6 {
+.feedbackForm h3,
+h6 {
     text-align: center;
 }
 
@@ -83,6 +110,3 @@ legend {
     margin-right: 1rem;
     cursor: pointer;
 }
-
-
-
