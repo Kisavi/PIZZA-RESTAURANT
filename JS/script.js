@@ -62,6 +62,9 @@ $(document).ready(function () {
                 totalAmount += 80
             }
         })
+
+        //multiplying the total amount with the number of pizzas picked
+        totalAmount *= (Quantity)
     });
 });
 
