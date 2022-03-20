@@ -23,7 +23,14 @@ $(document).ready(function () {
         $(".additionalToppings").text(pickedToppings);
         $(".quantity").text(Quantity);
 
-       
+        //check for the price of picked size
+        if (size === "Regular") {
+            totalAmount += 500
+        } else if (size === "Medium") {
+            totalAmount += 850
+        } else if (size === "Large") {
+            totalAmount += 1300
+        }
     });
 });
 
