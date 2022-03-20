@@ -70,6 +70,9 @@ $(document).ready(function () {
         if (message !== "") {
             totalAmount += 250
         }
+
+        // print out the total cost
+        $(".price").text(totalAmount);
     });
 });
 
