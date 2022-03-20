@@ -1,8 +1,24 @@
 // USER INTERFACE
+
 // allow user to pick multiple toppings
 $(function () {
     $(".chzn-select").chosen();
 });
+
+//alert message to user upon order submission
+function orderMessage() {
+    let message = $(".message").val();
+    if (message !== "") {
+        alert("Your order has been received and will be ready in 50 minutes. The delivery cost is Ksh 250 and will be done within 23 minutes after your order is ready.")
+    } else {
+        alert("Your order has been received and will be ready in 50 minutes.")
+    }
+}
+
+// alert a message to user on feedback form submission
+function alertMessage() {
+    alert("We have received your message")
+}
 
 // show user their order summary
 $(document).ready(function () {
@@ -75,18 +91,3 @@ $(document).ready(function () {
         $(".price").text(totalAmount);
     });
 });
-
-//alert message to user upon order submission
-function orderMessage() {
-    let message = $(".message").val();
-    if (message !== "") {
-        alert("Your order has been received and will be ready in 50 minutes. The delivery cost is Ksh 250 and will be done within 23 minutes after your order is ready.")
-    } else {
-        alert("Your order has been received and will be ready in 50 minutes.")
-    }
-}
-
-// alert a message to user on feedback form submission
-function alertMessage() {
-    alert("We have received your message")
-}

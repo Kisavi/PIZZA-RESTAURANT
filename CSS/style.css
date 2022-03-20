@@ -58,7 +58,7 @@ hr {
     margin-top: 7rem;
 }
 
-form {
+.pizzaBuilder {
     margin: 0 13rem;
     padding: 4rem;
     background: #fdcdaf;
@@ -70,7 +70,7 @@ legend {
     margin-bottom: 3rem;
 }
 
- button {
+ button, #orderButton {
     background: #000000 !important;
     color: #fff !important;
     border: none !important;

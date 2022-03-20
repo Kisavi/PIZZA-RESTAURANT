@@ -198,7 +198,7 @@
     <!-- ORDER SECTION -->
     <div id="order" class="order-section">
         <div class="container">
-            <form>
+            <form class="pizzaBuilder">
                 <legend>Build Your Pizza Here</legend>
                 <div class="mb-3">
                     <label class="form-label">Select your pizza flavor:</label>
@@ -254,7 +254,6 @@
                     <input type="text" class="form-control message" id="exampleFormControlInput1"
                         placeholder="@ Ksh 250. Only fill if you want us to do the delivery">
                 </div>
-                <!-- <button id="orderButton" type="button" class="btn btn-primary">Checkout</button> -->
                 <a href="#orderSummary" id="orderButton" class="btn btn-primary">Checkout</a>
             </form>
         </div>
@@ -274,22 +273,25 @@
     <!-- FEEDBACK SECTION -->
     <div id="contact" class="feedback">
         <div class="container feedbackForm">
-            <h3 class="mb-5">Get in Touch</h3>
-            <div class="feedback-form">
-                <h6 class="mb-5">We love and appreciate to hear from our clients. Share any messeage or feedback you
-                    have with us.</h6>
-                <div class="mb-3">
-                    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1"
-                        placeholder="name@example.com">
+            <form>
+                <h3 class="mb-5">Get in Touch</h3>
+                <div class="feedback-form">
+                    <h6 class="mb-5">We love and appreciate to hear from our clients. Share any messeage or feedback you
+                        have with us.</h6>
+                    <div class="mb-3">
+                        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                            placeholder="name@example.com" required>
+                    </div>
+                    <div class="mb-4">
+                        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
+                            placeholder="Your message..." required></textarea>
+                    </div>
+                    <button class="btn btn-primary" type="submit" onclick="alertMessage()">Send<i
+                            class='bx bx-right-arrow-alt'></i></button>
                 </div>
-                <div class="mb-4">
-                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
-                        placeholder="Your message..."></textarea>
-                </div>
-                <button class="btn btn-primary" onclick="alertMessage()">Send<i class='bx bx-right-arrow-alt'></i></button>
-            </div>
+            </form>
         </div>
     </div>
     <!-- FOOTER SECTION -->
