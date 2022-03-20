@@ -8,20 +8,22 @@ $(function () {
 $(document).ready(function () {
     $("#orderButton").click(function () {
         $("#orderSummary").slideDown(1200);
-        let flavour = $("#pizzaFlavour option:selected").text();
-        let size = $("#size option:selected").val();
-        let crust = $("#crust option:selected").val();
-        let toppings = $("#toppings option:selected").val();
+        let flavour = $("#pizzaFlavour :selected").text();
+        let size = $("#size :selected").val();
+        let crust = $("#crust :selected").val();
+        let pickedToppings = $("#toppings :selected").map((_, e) => e.value).get();
         let Quantity = $("#Quantity").val();
-        let totalAmount;
-        //alert(message)
+        let message = $(".message").val();
+        let totalAmount = 0;
 
         // print out user order summary
-        $(".pizzFlavour").text(flavour)
-        $(".pizzaSize").text(size)
-        $(".crustChoosen").text(crust)
-        $(".additionalToppings").text(toppings)
-        $(".quantity").text(Quantity)
+        $(".pizzFlavour").text(flavour);
+        $(".pizzaSize").text(size);
+        $(".crustChoosen").text(crust);
+        $(".additionalToppings").text(pickedToppings);
+        $(".quantity").text(Quantity);
+
+       
     });
 });
 
@@ -34,7 +36,6 @@ function orderMessage() {
         alert("Your order has been received and will be ready in 50 minutes.")
     }
 }
-
 
 // alert a message to user on feedback form submission
 function alertMessage() {
