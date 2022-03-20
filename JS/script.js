@@ -65,6 +65,11 @@ $(document).ready(function () {
 
         //multiplying the total amount with the number of pizzas picked
         totalAmount *= (Quantity)
+
+        //adding delivery charges
+        if (message !== "") {
+            totalAmount += 250
+        }
     });
 });
 
