@@ -31,6 +31,17 @@ $(document).ready(function () {
         } else if (size === "Large") {
             totalAmount += 1300
         }
+
+        //check for price of crust 
+        if (crust === "Thin") {
+            totalAmount += 100
+        } else if (crust === "Flat Bread") {
+            totalAmount += 150
+        } else if (crust === "Thick") {
+            totalAmount += 200
+        } else if (crust === "Stuffed") {
+            totalAmount += 250
+        }
     });
 });
 
