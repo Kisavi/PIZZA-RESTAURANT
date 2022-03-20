@@ -77,8 +77,8 @@ legend {
 }
 
 .order-summary {
-    margin-top: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 5rem;
+    padding: 10rem 0;
     display: none;
 }
 

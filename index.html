@@ -202,56 +202,56 @@
                 <legend>Build Your Pizza Here</legend>
                 <div class="mb-3">
                     <label class="form-label">Select your pizza flavor:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option>BBQ Steak</option>
-                        <option>Hawaiian</option>
-                        <option>Chicken Tikka</option>
-                        <option>Peri-Peri Chicken</option>
-                        <option>BBQ Chicken</option>
-                        <option>Margherita</option>
-                        <option>Veggie Deluxe</option>
-                        <option>Kachumbari</option>
-                        <option>Veggie Extravaganza</option>
+                    <select id="pizzaFlavour" class="form-select" aria-label="Default select example">
+                        <option value="bbqSteak">BBQ Steak</option>
+                        <option value="hawaiian">Hawaiian</option>
+                        <option value="tikka">Chicken Tikka</option>
+                        <option value="periperi">Peri-Peri Chicken</option>
+                        <option value="bbqChicken">BBQ Chicken</option>
+                        <option value="margherita">Margherita</option>
+                        <option value="veggie1">Veggie Deluxe</option>
+                        <option value="kachumbari">Kachumbari</option>
+                        <option value="veggie2">Veggie Extravaganza</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Pick your preferred Size:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option>Regular @ Ksh 500</option>
-                        <option>Medium @ Ksh 850</option>
-                        <option>Large @ Ksh 1300</option>
+                    <select id="size" class="form-select" aria-label="Default select example">
+                        <option value="Regular">Regular @ Ksh 500</option>
+                        <option value="Medium">Medium @ Ksh 850</option>
+                        <option value="Large">Large @ Ksh 1300</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Choose your favourite Crust:</label>
-                    <select class="form-select" aria-label="Default select example">
-                        <option>Thin Crust @ Ksh 100</option>
-                        <option>Flat Bread Crust @ Ksh 150</option>
-                        <option>Thick Crust @ Ksh 200</option>
-                        <option>Stuffed Crust @ Ksh 250</option>
+                    <select id="crust" class="form-select" aria-label="Default select example">
+                        <option value="Thin">Thin Crust @ Ksh 100</option>
+                        <option value="Flat Bread">Flat Bread Crust @ Ksh 150</option>
+                        <option value="Thick">Thick Crust @ Ksh 200</option>
+                        <option value="Stuffed">Stuffed Crust @ Ksh 250</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Choose your favourite Toppings:</label>
-                    <select class="chzn-select form-select" multiple="true" name="faculty"
+                    <select id="toppings" class="chzn-select form-select" multiple="true" name="faculty"
                         aria-label="Default select example">
-                        <option>Red Onions @ Ksh 80</option>
-                        <option>Sweet Corn @ Ksh 150</option>
-                        <option>Cheese @ Ksh 200</option>
-                        <option>Mushroom @ Ksh 250</option>
-                        <option>Green Pepper @ Ksh 50</option>
-                        <option>Pineapples @ Ksh 100</option>
-                        <option>Tomatoes @ Ksh 80</option>
+                        <option value="Red Onions">Red Onions @ Ksh 80</option>
+                        <option value="Sweet Corn">Sweet Corn @ Ksh 150</option>
+                        <option value="Cheese">Cheese @ Ksh 200</option>
+                        <option value="Mushroom">Mushroom @ Ksh 250</option>
+                        <option value="Green Pepper">Green Pepper @ Ksh 50</option>
+                        <option value="Pineapples">Pineapples @ Ksh 100</option>
+                        <option value="Tomatoes">Tomatoes @ Ksh 80</option>
                     </select>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Number of Pizza's:</label>
-                    <input type="number" id="quantity" class="form-control" name="quantity" min="1"
+                    <input type="number" id="Quantity" class="form-control" name="quantity" min="1"
                         placeholder="Number of Pizza's">
                 </div>
                 <div class="mb-5">
                     <label for="exampleFormControlInput1" class="form-label">Delivery Address</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1"
+                    <input type="text" class="form-control message" id="exampleFormControlInput1"
                         placeholder="@ Ksh 250. Only fill if you want us to do the delivery">
                 </div>
                 <!-- <button id="orderButton" type="button" class="btn btn-primary">Checkout</button> -->
@@ -261,13 +261,13 @@
         <div id="orderSummary" class="order-summary">
             <div class="container summary">
                 <h3>Your Order Summary</h3>
-                <p>Flavour choosen:</p>
-                <p>Pizza size:</p>
-                <p>Crust choosen:</p>
-                <p>Additional toppings:</p>
-                <p>Number of pizzas:</p>
+                <p>Flavour choosen: <span class="pizzFlavour"></span></p>
+                <p>Pizza size: <span class="pizzaSize"></span></p>
+                <p>Crust choosen: <span class="crustChoosen"></span></p>
+                <p>Additional toppings: <span class="additionalToppings"></span></p>
+                <p>Number of pizzas: <span class="quantity"></span></p>
                 <p>Total amount:</p>
-                <button type="submit" class="btn btn-primary">Place Order</button>
+                <button type="submit" class="btn btn-primary" onclick="orderMessage()">Place Order</button>
             </div>
         </div>
     </div>
