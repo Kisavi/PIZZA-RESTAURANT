@@ -42,6 +42,26 @@ $(document).ready(function () {
         } else if (crust === "Stuffed") {
             totalAmount += 250
         }
+
+        //check for price of toppings
+        let toppings = ["Red-Onions", "Sweet-Corn", "Cheese", "Mushroom", "Green-Pepper", "Pineapples", "Tomatoes"]
+        pickedToppings.forEach(function (pickedTopping) {
+            if (pickedTopping === "Red-Onions") {
+                totalAmount += 80
+            } else if (pickedTopping === "Sweet-Corn") {
+                totalAmount += 150
+            } else if (pickedTopping === "Cheese") {
+                totalAmount += 200
+            } else if (pickedTopping === "Mushroom") {
+                totalAmount += 250
+            } else if (pickedTopping === "Green-Pepper") {
+                totalAmount += 50
+            } else if (pickedTopping === "Pineapples") {
+                totalAmount += 100
+            } else if (pickedTopping === "Tomatoes") {
+                totalAmount += 80
+            }
+        })
     });
 });
 
