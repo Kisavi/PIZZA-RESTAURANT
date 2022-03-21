@@ -27,8 +27,8 @@ This template is my portfolio and is dived into the following sections,
   
   ### Installation process
   To view the website,
-  + Click <a href="#">here</a> or
-  + Copy paste and load this link on your preferred browser #
+  + Click <a href=" https://kisavi.github.io/PIZZA-RESTAURANT/">here</a> or
+  + Copy paste and load this link on your preferred browser  https://kisavi.github.io/PIZZA-RESTAURANT/
   
   ## Technology used
   + HTML - which was used in the structuring of the page.
