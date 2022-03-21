@@ -70,7 +70,7 @@ legend {
     margin-bottom: 3rem;
 }
 
- button, #orderButton {
+ .summary button, #btn1, #orderButton {
     background: #000000 !important;
     color: #fff !important;
     border: none !important;

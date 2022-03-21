@@ -1,6 +1,7 @@
 @media only screen and (max-width :1024px) {
     html, body {
         width: 100%;
+        overflow-x: hidden;
     }
 
     /* Carousel section */
@@ -9,6 +10,10 @@
     }
 
     /* Menu section */
+    #menu {
+        margin-top: 3rem !important;
+    }
+
     .card-section {
         display: flex;
         flex-direction: column;
@@ -29,9 +34,14 @@
         margin: 0 !important;
     }
 
+    .order-summary {
+        margin-bottom: 0rem !important;
+        padding: 5rem !important;
+    }
+
     /* Feedback section */
     .feedback {
-        margin-top: 4rem !important;
+        margin-top: 2rem !important;
     }
 
     .feedback-form {
