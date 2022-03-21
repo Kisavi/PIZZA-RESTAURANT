@@ -39,6 +39,7 @@ $(document).ready(function () {
         $(".additionalToppings").text(pickedToppings);
         $(".quantity").text(Quantity);
 
+        //BUSINESS LOGIC
         //check for the price of picked size
         if (size === "Regular") {
             totalAmount += 500
