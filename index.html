@@ -257,6 +257,27 @@
                 <a href="#orderSummary" id="orderButton" class="btn btn-primary">Checkout</a>
             </form>
         </div>
+
+        <!-- Order Modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                    </div>
+                    <div class="modal-body">
+                        <P id="order-message">
+                        </P>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
         <div id="orderSummary" class="order-summary">
             <div class="container summary">
                 <h3>Your Order Summary</h3>
@@ -266,7 +287,12 @@
                 <p>Additional toppings: <span class="additionalToppings"></span></p>
                 <p>Number of pizzas: <span class="quantity"></span></p>
                 <p>Total amount: <span class="price"></span></p>
-                <button type="submit" class="btn btn-primary" onclick="orderMessage()">Place Order</button>
+
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                    onclick="orderMessage()">
+                    Place Order
+                </button>
             </div>
         </div>
     </div>
@@ -288,12 +314,34 @@
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"
                             placeholder="Your message..." required></textarea>
                     </div>
-                    <button id="btn1" class="btn btn-primary" type="submit" onclick="alertMessage()">Send<i
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop" onclick="alertMessage()">Send<i
                             class='bx bx-right-arrow-alt'></i></button>
+
                 </div>
             </form>
         </div>
     </div>
+
+    <!-- Message Modal
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                </div>
+                <div class="modal-body">
+                    <P id="client-message">
+                    </P>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">OK</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
     <!-- FOOTER SECTION -->
     <div class="footer">
         <div class="container icons">

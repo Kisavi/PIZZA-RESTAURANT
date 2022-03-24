@@ -8,16 +8,23 @@ $(function () {
 //alert message to user upon order submission
 function orderMessage() {
     let message = $(".message").val();
-    if (message !== "") {
-        alert("Your order has been received and will be ready in 50 minutes. The delivery cost is Ksh 250 and will be done within 23 minutes after your order is ready.")
-    } else {
-        alert("Your order has been received and will be ready in 50 minutes.")
+    let Quantity = $("#Quantity").val();
+    if (message !== "" && Quantity !== "") {
+        $("#staticBackdropLabel").text("ORDER CONFIRMATION!!!")
+        $("#order-message").text("We've received your order and we will notify you as soon as we dispatch the rider. The delivery cost is Ksh 250 and will be done within 23 minutes after your order is ready. Thank you for choosing Pizza-Me.")
+    } else if (message === "" && Quantity !== "") {
+        $("#staticBackdropLabel").text("ORDER CONFIRMATION!!!")
+        $("#order-message").text("We've received your order and we will notify you as soon as it is ready for pick up. Thank you for choosing Pizza-Me.")
+    } else if (Quantity === "") {
+        $("#staticBackdropLabel").text("ORDER CONFIRMATION!!!")
+        $("#order-message").text("Kindly pick the number of pizzas you want")
     }
 }
 
 // alert a message to user on feedback form submission
 function alertMessage() {
-    alert("We have received your message")
+    $("#staticBackdropLabel").text("THANK YOU FOR GETTING IN TOUCH!")
+    $("#order-message").text("We have received your message and would like to thank you for writing to us. Keep it Pizza-Me.")
 }
 
 // show user their order summary
@@ -31,6 +38,16 @@ $(document).ready(function () {
         let Quantity = $("#Quantity").val();
         let message = $(".message").val();
         let totalAmount = 0;
+
+        // function pizza(f,s,c,t,q){
+        //     this.f = f;
+        //     this.s = s;
+        //     this.c = c;
+        //     this.t = t;
+        //     this.q = q;
+        // }
+        // let choosenPizza = new pizza (flavour,size,crust,pickedToppings,Quantity)
+        // console.log(choosenPizza.s)
 
         // print out user order summary
         $(".pizzFlavour").text(flavour);

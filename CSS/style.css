@@ -2,8 +2,17 @@ hr {
     margin: 2rem 0;
 }
 
+button {
+    background-color: #000000 !important;
+}
+
 .carousel-caption a {
-    background: #000000 !important;
+    background: maroon !important;
+    border: transparent !important;
+}
+
+.carousel-caption:hover a {
+    background: #ffae7b !important;
     border: transparent !important;
 }
 
@@ -81,6 +90,8 @@ legend {
     padding: 10rem 0;
     display: none;
 }
+
+
 
 /* Feedback section */
 .feedback {
